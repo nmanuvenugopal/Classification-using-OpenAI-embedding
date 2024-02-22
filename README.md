@@ -1,4 +1,25 @@
 # Classification-using-OpenAI-embedding
+Embedding is a more regular concept in NLP, where every text in the input are converted into the numerical format. To be more specific the embedding model maps the text into multi diamensional vector space. The numbers iutputed by the model are the text's location in the space.
+
+More similar words will be placed closer together and Dissimilar words appears further away in the space. For example, word teacher and student will be placed closer together. and Student and Rice are placed further away in the space.
+
+
+This ability of grouping of words means that embedding can be used to extract the semantic meaning. For example,
+1. Which way is it to the supermarket ?
+2. Could I have the direction to the shop?
+
+both of the above sentence are semantically similar but structrely different. An embedding model will analyse the semantic similarity and return the similar output in both scenario.
+
+How are the embedding model differe from the traditional model ?
+
+Traditional model uses the Keyword matching pattern. for example if we query "comfortable running shoes", it analyses the keyword in the query and it may return the following:
+1. Comfortable running shorts.
+2. Running shoes for kids.
+3. Top 10 running routes in New York city
+
+if we see the above example then we can see that the query return entire return results. In the first output instance it used the keyword "comfortable running" from query but it doesn't meets our criteria beacuse we searched for shoes.
+
+
 I have followed the following point while doing this experiment.
 
 1. Choose an OpenAI Model for embedding.
